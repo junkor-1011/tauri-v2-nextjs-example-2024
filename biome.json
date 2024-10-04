@@ -11,6 +11,11 @@
   "linter": {
     "enabled": true,
     "rules": {
+      "correctness": {
+        "useHookAtTopLevel": {
+          "level": "error"
+        }
+      },
       "recommended": true
     },
     "ignore": ["**/node_modules", "**/dist", "**/cdk.out", "**/.next", "**/out"]

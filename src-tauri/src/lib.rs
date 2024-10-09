@@ -11,6 +11,15 @@ pub fn run() {
                         .build(),
                 )?;
             }
+
+            // Devtools
+            #[cfg(debug_assertions)]
+            {
+                use tauri::Manager;
+                let window = app.get_webview_window("main").unwrap();
+                window.open_devtools();
+                window.close_devtools();
+            }
             Ok(())
         })
         .plugin(tauri_plugin_shell::init())

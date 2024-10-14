@@ -1,5 +1,6 @@
 import type { NextPage } from 'next';
 import Image from 'next/image';
+import Link from 'next/link';
 
 import { InvokeExample } from './invoke-example';
 
@@ -52,6 +53,9 @@ const Home: NextPage = () => {
           </a>
         </div>
         <InvokeExample />
+        <Link className="btn btn-accent" href="/ipc-example">
+          go to ipc-example
+        </Link>
       </main>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
         <a

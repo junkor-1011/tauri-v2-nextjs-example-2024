@@ -19,12 +19,15 @@ export const InvokeExample: FC = () => {
         }}
       >
         <input
+          className="input input-bordered"
           onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
             setName(e.currentTarget.value);
           }}
           placeholder="Enter a name..."
         />
-        <button type="submit">greet</button>
+        <button className="btn btn-primary" type="submit">
+          greet
+        </button>
       </form>
       <p>{greetMsg}</p>
     </div>

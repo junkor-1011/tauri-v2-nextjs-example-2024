@@ -13,7 +13,8 @@
     "rules": {
       "correctness": {
         "useHookAtTopLevel": {
-          "level": "error"
+          "level": "error",
+          "options": {}
         }
       },
       "recommended": true
